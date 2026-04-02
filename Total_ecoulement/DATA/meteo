@@ -1,0 +1,49 @@
+/ METEO FILE EXAMPLE
+/ (free comment lines )
+/---------------------------------------------------------
+/ The format of the file is important and is the following:
+/ --------------------------------------------------------
+/ year (integer), quantile (integer), hour (integer), minute (integer), second (dble precision) of the profile
+/ location of the meteo profile in the domaine (x,y) in m (double precision)
+/ sea level pressure (Pa) (double precision)
+/
+/ temperature profile: 
+/ number of levels (integer)
+/ for each level :
+/ altitude(m), temperature(°C),humidity(kg/kg),number of droplet(n/cm3) (double)
+/
+/ wind profile:
+/ number of levels (integer)
+/ for each level :
+/ altitude (m),u(m/s),v(m/s),k(m2/s2),eps(m2/s3) (double precision)
+/
+/ NO EMPY LINE AT THE END OF THE FILE
+/ ---------------------------------------------------------
+/ ---------------------------------------------------------
+/
+/ year, quantile, hour, minute, second of the profile:
+/
+2022, 12, 12, 14 , 8.
+/
+/ location of the meteo profile in the domaine (x,y):
+/
+500.0000E+00   500.0000E+00
+/
+/Sea level pressure :
+/
+101320.
+/
+/ Temperature profile: number of levels,(altitude of each level in m, 
+/ temperature(°C), humidity(kg/kg) and number of droplet(n/cm3)) 
+/
+3
+0.00  20.0000  0.000 0.000
+50.00  20.000  0.000  0.000
+300.00  20.000  0.000  0.000
+/
+/ Wind profile: number  of levels,(alt.,u,v,k,eps)
+/
+3
+0.00  5.000  0.000  0.000  0.000
+50.00  5.000  0.000  0.000  0.000
+300.00  5.000  0.000  0.000  0.000
